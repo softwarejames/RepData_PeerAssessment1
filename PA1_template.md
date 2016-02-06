@@ -196,6 +196,32 @@ Source: local data frame [61 x 3]
 61 2012-11-30         NA         NA
 ```
 
+```r
+#mean
+print(paste('mean = ',
+            mean(t1_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)
+```
+
+```
+[1] "mean = 10766.1886792453"
+```
+
+```r
+#median
+print(paste('median = ',
+            median(t1_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)
+```
+
+```
+[1] "median = 10765"
+```
+
 ## What is the average daily activity pattern?
 #### 1. Make a time series plot (i.e. 𝚝𝚢𝚙𝚎 = "𝚕") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
 
@@ -389,6 +415,32 @@ Source: local data frame [61 x 3]
 59 2012-11-28 35.3576389        0.0
 60 2012-11-29 24.4687500        0.0
 61 2012-11-30 37.8784722       34.5
+```
+
+```r
+#mean
+print(paste('mean = ',
+            mean(t2_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)
+```
+
+```
+[1] "mean = 10784.9180327869"
+```
+
+```r
+#median
+print(paste('median = ',
+            median(t2_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)
+```
+
+```
+[1] "median = 10909"
 ```
 
 ## Are there differences in activity patterns between weekdays and weekends?

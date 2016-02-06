@@ -58,6 +58,20 @@ m1_steps_data <- data %>%
 
 #output    
 print(m1_steps_data)
+
+#mean
+print(paste('mean = ',
+            mean(t1_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)
+
+#median
+print(paste('median = ',
+            median(t1_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)
 ```
 
 ## What is the average daily activity pattern?
@@ -166,6 +180,20 @@ m2_steps_data <- imp_steps_data %>%
 
 #output    
 print(m2_steps_data)
+
+#mean
+print(paste('mean = ',
+            mean(t2_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)
+
+#median
+print(paste('median = ',
+            median(t2_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)
 ```
 
 ## Are there differences in activity patterns between weekdays and weekends?

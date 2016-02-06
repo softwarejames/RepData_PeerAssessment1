@@ -244,6 +244,20 @@ print(m1_steps_data)</code></pre>
 59 2012-11-28 35.3576389          0
 60 2012-11-29 24.4687500          0
 61 2012-11-30         NA         NA</code></pre>
+<pre class="r"><code>#mean
+print(paste('mean = ',
+            mean(t1_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)</code></pre>
+<pre><code>[1] &quot;mean = 10766.1886792453&quot;</code></pre>
+<pre class="r"><code>#median
+print(paste('median = ',
+            median(t1_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)</code></pre>
+<pre><code>[1] &quot;median = 10765&quot;</code></pre>
 </div>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
@@ -418,6 +432,20 @@ print(m2_steps_data)</code></pre>
 59 2012-11-28 35.3576389        0.0
 60 2012-11-29 24.4687500        0.0
 61 2012-11-30 37.8784722       34.5</code></pre>
+<pre class="r"><code>#mean
+print(paste('mean = ',
+            mean(t2_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)</code></pre>
+<pre><code>[1] &quot;mean = 10784.9180327869&quot;</code></pre>
+<pre class="r"><code>#median
+print(paste('median = ',
+            median(t2_steps_data$StepCount, na.rm = TRUE),
+            sep = ''
+      )
+)</code></pre>
+<pre><code>[1] &quot;median = 10909&quot;</code></pre>
 </div>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
